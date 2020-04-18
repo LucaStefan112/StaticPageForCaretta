@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ro">
+	<head>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Prezentare Casute</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+		<script type="text/javascript" src="p5.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+
+	<body>
+		<div id="main_div">
+			<div id = 'top_bar'>
+				<a href="https://caretta.ro/"><img src="media/logo1.png" style="width: 205px; height: 40px;padding-left: 7px;"></a>
+				<div id='top_bar_div'>
+					<a href="https://caretta.ro/calculator-acoperis/" id="top_bar_link">calculator acoperiș</a>
+					<a href="https://simulator.caretta.ro/" id="top_bar_link">simulator culori</a>
+					<a href="https://caretta.ro/cere-oferta-personalizata/" id="top_bar_link" style="color: #E0004D">cere ofertă</a>
+					<a href="tel:+40735000555" id="top_bar_link" style="color: #E0004D">+40 735 000 555</a>
+					<a href="#" id="top_bar_link">RO ^</a>
+				</div>
+			</div>
+
+
+			<ul id = 'nav_bar'>
+				<li style="position: relative;"><a href='#' id = 'nav_bar_button_menu'><p style="color: white">produse</p></a>
+					<ul id="dropdown_menu">
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/tigla-metalica/" id = 'dropdown_menu_li'><p>țiglă metalică</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/tabla-caretta-click/" id = 'dropdown_menu_li'><p>tablă caretta click</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/sistem-pluvial/" id = 'dropdown_menu_li'><p>sistem pluvial</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/accesorii-si-elemente-etansare/" id = 'dropdown_menu_li'><p>accesorii și elemente etanșare</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/folie-anticondens3/" id = 'dropdown_menu_li'><p>folie anticondens</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/produs/lambriu-metalic/" id = 'dropdown_menu_li'><p>lambriu metalic</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/produs/sipca-metalica-pentru-gard/" id = 'dropdown_menu_li'><p>șipcă metalică pentru gard</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/ferestre-velux/" id = 'dropdown_menu_li'><p>ferestre velux</p></a></li>
+					</ul>
+				</li>
+				<li><a href="https://caretta.ro/promotii/" id = 'nav_bar_button'><p style="color: white">promoții</p></a></li>
+				<li><a href="https://caretta.ro/portofoliu/" id = 'nav_bar_button'><p style="color: white">portofoliu</p></a></li>
+				<li><a href="https://caretta.ro/contact/" id = 'nav_bar_button'><p style="color: white">contact</p></a></li>
+				<li style="position: relative;"><a href='https://caretta.ro/despre-companie/' id = 'nav_bar_button_menu'><p style="color: white">companie</p></a>
+					<ul id="dropdown_menu">
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/despre-companie/" id = 'dropdown_menu_li'><p>companie</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/istorie/" id = 'dropdown_menu_li'><p>istorie</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/caretta-in-cifre/" id = 'dropdown_menu_li'><p>caretta în cifre</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/fabrica/" id = 'dropdown_menu_li'><p>fabrica</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/avantaje-client/" id = 'dropdown_menu_li'><p>avantaje</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/regulamente-si-documentatie/" id = 'dropdown_menu_li'><p>documentații</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/caretta-in-comunitate/" id = 'dropdown_menu_li'><p>caretta în comunitate</p></a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<ul id = 'nav_bar_sticky'>
+				<li style="position: relative;"><a href='#' id = 'nav_bar_button_menu'><p style="color: white">produse</p></a>
+					<ul id="dropdown_menu">
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/tigla-metalica/" id = 'dropdown_menu_li'><p>țiglă metalică</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/tabla-caretta-click/" id = 'dropdown_menu_li'><p>tablă caretta click</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/sistem-pluvial/" id = 'dropdown_menu_li'><p>sistem pluvial</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/accesorii-si-elemente-etansare/" id = 'dropdown_menu_li'><p>accesorii și elemente etanșare</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/folie-anticondens3/" id = 'dropdown_menu_li'><p>folie anticondens</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/produs/lambriu-metalic/" id = 'dropdown_menu_li'><p>lambriu metalic</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/produs/sipca-metalica-pentru-gard/" id = 'dropdown_menu_li'><p>șipcă metalică pentru gard</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/ferestre-velux/" id = 'dropdown_menu_li'><p>ferestre velux</p></a></li>
+					</ul>
+				</li>
+				<li><a href="https://caretta.ro/promotii/" id = 'nav_bar_button'><p style="color: white">promoții</p></a></li>
+				<li><a href="https://caretta.ro/portofoliu/" id = 'nav_bar_button'><p style="color: white">portofoliu</p></a></li>
+				<li><a href="https://caretta.ro/contact/" id = 'nav_bar_button'><p style="color: white">contact</p></a></li>
+				<li style="position: relative;"><a href='https://caretta.ro/despre-companie/' id = 'nav_bar_button_menu'><p style="color: white">companie</p></a>
+					<ul id="dropdown_menu">
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/despre-companie/" id = 'dropdown_menu_li'><p>companie</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/istorie/" id = 'dropdown_menu_li'><p>istorie</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/caretta-in-cifre/" id = 'dropdown_menu_li'><p>caretta în cifre</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/fabrica/" id = 'dropdown_menu_li'><p>fabrica</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/avantaje-client/" id = 'dropdown_menu_li'><p>avantaje</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/regulamente-si-documentatie/" id = 'dropdown_menu_li'><p>documentații</p></a></li>
+						<li><div style="display: flex;"><div id='v_line_space'></div><div id='v_line'></div><div id='v_line_space'></div></div><a href="https://caretta.ro/companie/caretta-in-comunitate/" id = 'dropdown_menu_li'><p>caretta în comunitate</p></a></li>
+					</ul>
+				</li>
+			</ul>
+
+			<p style="margin-top: 40px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<div id="content_div">
+				<div id='content_menu'>
+					<div id="house_button1" onclick="selected(house1, 0)">Kit 1</div>
+					<div id="house_button2" onclick="selected(house2, 1)">Kit 2</div>
+					<div id="house_button3" onclick="selected(house3, 2)">Kit 3</div>
+				</div>
+				<div id="data">
+					<div id="show">
+						<img id="show_img_left">
+						<div style="display: flex; width: 50px; justify-content: space-between; margin-top: 15px;">
+							<div style="border-right: 15px solid #003048; border-top: 15px solid white; border-bottom: 15px solid white;background: white;cursor: pointer;" onclick="switchImg('left');"></div>
+							<div style="border-left: 15px solid #003048; border-top: 15px solid white; border-bottom: 15px solid white;background: white;cursor: pointer;" onclick="switchImg('right');"></div>
+						</div>
+					</div>
+					<div id="specificationss">
+
+						<div style="display: flex;padding-bottom: 30px; padding-top: 30px;align-items: center;"><h1 style="padding-right: 10px;">Total:</h1><div style="width: 400px; display: flex;"><h2 id = 'total' style="padding-right: 10px;color: #E0004D;"></h2><h2 style="padding-right: 10px;"> RON /</h2><h2 id="totalEuro" style="padding-right: 10px; color: #E0004D;"></h2><h2>EURO</h2></div>
+						</div>
+
+						<div id="specifications"></div>
+						
+						<div id='checkD' style="display: flex;justify-content: center;align-items: center;padding-bottom: 30px;">
+							<h2 style="width: 110px;margin-top: 30px;border-right: 3px solid #335C6D;">Alegeți fațadă:</h2>
+							<div style="margin-left: 30px;display: flex; flex-direction: column;align-items: center;padding-top: 30px;width: 400px;">
+								<div style="display: flex;cursor: pointer;padding: 0px 5px;border-radius: 25px;margin:7px 0px;" id='opt1' onclick="selectOpt('opt1');"><h3>Casete fațadă, mat 0.5:</h3><h3 style="padding: 0px 10px;color: #E0004D;">1526.54</h3><h3>RON</h3></div>
+								<div style="display: flex;cursor: pointer;padding: 0px 5px;border-radius: 25px;margin: 2px 0px;" id='opt2' onclick="selectOpt('opt2');"><h3>Tablă sinus 18*0.5 PE 25μm:</h3><h3 style="padding: 0px 10px;color: #E0004D;">1088.5</h3><h3>RON</h3></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style = 'height:200px'></div>
+	</body>
+</html>
