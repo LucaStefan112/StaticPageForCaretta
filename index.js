@@ -17,9 +17,9 @@ let houses = [
 
 		'Materiale structură; ' : {
 			'dispune' : true,
-			'Structură pereți și acoperiș; ' : 2619,
-			'Pardoseală; ' : 523.80,
-			'Stâlpi exteriori, țeavă 80*80*3; ' : 153.78,
+			'Structură pereți și acoperiș; ' : 3164.63,
+			'Pardoseală; ' : 632.93,
+			'Stâlpi exteriori, țeavă 80*80*3; ' : 161.34,
 		},
 		'Materiale închideri exterioare; ' : {
 			'dispune' : false
@@ -39,11 +39,7 @@ let houses = [
 		},
 		'Tâmplărie: ' : {
 			'dispune' : false
-		},
-		'Manoperă montaj: ' : {
-			'dispune' : true,
-			'Montaj cadre în fabrică: ' : 654.75,
-		},
+		}
 	},
 	{
 		'Pictures' : [
@@ -52,11 +48,11 @@ let houses = [
 			'media/detaliu structura.jpg'
 			],
 
-		'Materiale structură: ' : {
+		'Materiale structură; ' : {
 			'dispune' : true,
-			'Structură pereți și acoperiș: ' : 2619,
-			'Pardoseală: ' : 523.80,
-			'Stâlpi exteriori, țeavă 80*80*3: ' : 153.78,
+			'Structură pereți și acoperiș; ' : 3164.63,
+			'Pardoseală; ' : 632.93,
+			'Stâlpi exteriori, țeavă 80*80*3; ' : 161.34,
 		},
 		'Materiale închideri exterioare: ' : {
 			'dispune' : true,
@@ -72,32 +68,12 @@ let houses = [
 			'Accesorii etanșare-fixare: ' : 148.80,
 			'Sistem pluvial: ' : 326.24,
 		},
-		'Instalații electrice: ' : {
-			'dispune' : true,
-			'Tablou el. 4 module: ' : 15,
-			'Cablu CYY 3*2.5: ' : 48,
-			'Priză dublă, cu doză: ' : 32,
-			'Întrerupător, cu doză: ' : 10,
-			'Plafonieră: ' : 20,
-		},
-		'Materiale închideri interioare: ' : {
-			'dispune' : true,
-			'Izolație vată bazalică semirigidă 50: ' : 254.12,
-			'Gips carton, pereți + acoperiș: ' : 479.38,
-		},
+
 		'Tâmplărie: ' : {
 			'dispune' : true,
 			'Ușă metalică 202*88: ' : 402.52,
 			'Geam termopan 86*116, dublă deschidere: ' : 268.91,
-		},
-		'Manoperă montaj: ' : {
-			'dispune' : true,
-			'Montaj cadre în fabrică: ' : 654.75,
-			'Asamblare cadre la client: ' : 654.75,
-			'Închideri(casete, lambriu, flashing-uri): ' : 1025.29,
-			'Montaj tâmplărie: ' : 200,
-			'Montaj acoperiș: ' : 432,
-		},
+		}
 	},
 	{
 		'Pictures' : [
@@ -106,11 +82,11 @@ let houses = [
 			'media/detaliu structura.jpg'
 			],
 
-		'Materiale structură: ' : {
+		'Materiale structură; ' : {
 			'dispune' : true,
-			'Structură pereți și acoperiș: ' : 2619,
-			'Pardoseală: ' : 523.80,
-			'Stâlpi exteriori, țeavă 80*80*3: ' : 153.78,
+			'Structură pereți și acoperiș; ' : 3164.63,
+			'Pardoseală; ' : 632.93,
+			'Stâlpi exteriori, țeavă 80*80*3; ' : 161.34,
 		},
 		'Materiale închideri exterioare: ' : {
 			'dispune' : true,
@@ -146,17 +122,7 @@ let houses = [
 			'Ușă metalică 202*88: ' : 402.52,
 			'Geam termopan 86*116, dublă deschidere: ' : 268.91,
 			'Geam Velux GZL CK02 55*78, Ramă EDW-0000: ' : 815.13,
-		},
-		'Manoperă montaj: ' : {
-			'dispune' : true,
-			'Montaj cadre în fabrică: ' : 654.75,
-			'Asamblare cadre la client: ' : 654.75,
-			'Închideri(casete, lambriu, flashing-uri): ' : 1025.29,
-			'Instalații electrice: ' : 100,
-			'Montaj izolație și finisaje interioare: ' : 1125,
-			'Montaj tâmplărie: ' : 200,
-			'Montaj acoperiș: ' : 432,
-		},
+		}
 	},];
 let multiplyRate = 1.5*1.19;
 let data;
@@ -164,7 +130,6 @@ let headers = [], specifications;
 let totalH, totalEuroH;
 
 function display(nr){
-	console.log(nr);
 
 	if(nr == 0)
 		document.getElementById('checkD').style.display = 'none';
@@ -186,10 +151,15 @@ function display(nr){
 			let part1 = document.createElement('h3');
 			part1.textContent = properties;
 			part1.id = 'sp';
-			let part2 = document.createElement('h2');
-			headers[count].menu = document.createElement('ul');
+			let part2 = document.createElement('h3');
+			
+			if(nr == 0)
+				headers[count].menu = document.createElement('div');
+			else
+				headers[count].menu = document.createElement('ul');
+
 			headers[count].menu.style.width = '500px';
-			let ron1 = document.createElement('h2');
+			let ron1 = document.createElement('h3');
 			ron1.textContent = 'RON';
 
 			for(let specs in houses[nr][properties]){
@@ -218,25 +188,25 @@ function display(nr){
 			specifications.appendChild(curDiv);
 			count++;
 
-			total_sum += Math.floor(sum * 100) / 100;
+			total_sum += sum;
 		}
 	}
 	totalH.textContent = Math.floor((total_sum)* 100) / 100;
-	totalEuroH.textContent = Math.floor(total_sum * 0.21 * 100) / 100;
+	totalEuroH.textContent = Math.floor(total_sum * 0.2 * 100) / 100;
 	
-	if(nr != 1)
+	if(nr != 0)
 
 		selectOpt('opt1');
 }
 
 function selectOpt(opt){
 	if(opt == 'opt1'){
-		optsum = 1526.54;
+		optsum = 2724.71;
 		document.getElementById('opt1').style.border = '2px solid #E0004D';
 		document.getElementById('opt2').style.border = 'none';
 	}
 	else{
-		optsum = 1088.5;
+		optsum = 1942.97;
 		document.getElementById('opt2').style.border = '2px solid #E0004D';
 		document.getElementById('opt1').style.border = 'none';
 	}
