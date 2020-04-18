@@ -309,6 +309,7 @@ li{
 #specifications{
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	width: 70%;
 }
 
@@ -317,6 +318,7 @@ li{
 	flex-direction: column;
 	align-items: center;
 	width: 100%;
+	height: 600px;
 }
 
 #specifications div{
